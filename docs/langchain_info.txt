@@ -1,0 +1,18 @@
+LangChain is a framework for developing applications powered by large language models (LLMs).
+It provides tools to connect LLMs with external data sources and services.
+
+LangChain has several key components:
+- Models: Wrappers around LLMs like OpenAI GPT.
+- Prompts: Templates to structure input to the model.
+- Chains: Sequences of calls to models or other utilities.
+- Memory: Store and retrieve conversation history.
+- Retrieval: Fetch relevant data from external sources to augment the model.
+- Agents: Let the model decide which tools to use and in what order.
+
+Retrieval Augmented Generation (RAG) is a technique where you retrieve relevant
+documents from a database and pass them to the LLM as context before answering.
+This allows the LLM to answer questions about your own data without retraining.
+
+Vector databases store text as embeddings (numerical vectors).
+When you ask a question, it is also converted to an embedding,
+and the most similar chunks are retrieved and passed to the LLM.

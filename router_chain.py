@@ -51,13 +51,8 @@ def route(question):
         return general_chain.invoke({"input": question})
 
 if __name__ == "__main__":
-    questions = [
-        "What is the square root of 144?",
-        "Who was the first president of the United States?",
-        "Why is the sky blue?",
-        "What is the capital of France?",
-    ]
-
-    for question in questions:
-        print(f"\n=== Q: {question} ===")
+    while True:
+        question = input("\nAsk a question (or type 'exit' to quit): ")
+        if question.lower() == "exit":
+            break
         print(route(question))
